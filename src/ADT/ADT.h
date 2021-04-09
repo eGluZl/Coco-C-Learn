@@ -19,6 +19,8 @@ Complex Sub(Complex A, Complex B);         //—
 Complex Mul(Complex A, Complex B);      //*
 Complex Div(float a, float b);        ///
 float GetImage(Complex I);
+
 float GetReal(Complex I);
+
 void Print_I(Complex I);
 

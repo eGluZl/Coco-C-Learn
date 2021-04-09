@@ -3,23 +3,29 @@
 //
 
 #include<iostream.h>
+
 #define N 10
 
-void sub(intb[]){
-    int i,j,temp,m;
-    m=N/2;
-    for(i=0;i<m;i++){
-        j=N-1-i;
-        temp=b[i];b[i]=b[j];b[j]=temp;
+void sub(intb[]) {
+    int i, j, temp, m;
+    m = N / 2;
+    for (i = 0; i < m; i++) {
+        j = N - 1 - i;
+        temp = b[i];
+        b[i] = b[j];
+        b[j] = temp;
     }
     return;
 }
 
-void main() {
-    int a[10],i;
-    for (i = 0; i < N; i++)
-        cin>>a[i];
+int main() {
+    int a[10], i;
+    for (i = 0; i < N; i++) {
+        cin >> a[i];
+    }
     sub(a);
-    for(i=0;i<N;i++)
-        cout<<a[i];
+    for (i = 0; i < N; i++) {
+
+        cout << a[i];
+    }
 }

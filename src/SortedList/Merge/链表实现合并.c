@@ -2,7 +2,7 @@
 // Created by Coco on 2021/4/9.
 //
 
-#include "有序表合并.h"
+#include "MergeSortedList.h"
 
 void MergeList_L(DuLinkList &La, DuLinkList&Lb, DuLinkList &Lc){
     pa = La->next;

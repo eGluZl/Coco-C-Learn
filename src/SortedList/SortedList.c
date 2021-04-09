@@ -2,9 +2,10 @@
 // Created by Coco on 2021/4/6.
 //
 
-#include "顺序表.h"
+#include "SortedList.h"
 #include "stdio.h"
 #include "stdlib.h"
+#include "../common/Constants.h"
 
 #define OVERFLOW 0
 #define OK 1
@@ -56,7 +57,7 @@ int ListEmpty(SqList L) {
 
 //取第i个位置的元素的值
 //int InitList_Sq
-void GetElem(SqList L, int i, int *e) {
+Status GetElem(SqList L, int i, int *e) {
     if (i < 1 || i > L.length)
         return ERROR;
     e = &L.elem[i - 1];      //第i-1的单元存储着第i个位置的元素
@@ -75,7 +76,7 @@ int LocateElem(SqList L, int e) {
 
 //求直接前驱：
 void PriorElem(SqList L, int cur_e, int *pre_e) {
-    pre_e = &L.elem[cur_e - 2]
+    pre_e = &L.elem[cur_e - 2];
 }
 
 //求直接后继
@@ -84,11 +85,14 @@ void NextElem(SqList L, int cur_e, int *next_e) {
 }
 
 //在线性表第i个位置插入元素
-void ListInsert(SqList *L, int i, int e) {
-    if (i < 1 || i > L->length + 1)
+Status ListInsert(SqList *L, int i, int e) {
+    if (i < 1 || i > L->length + 1) {
         return ERROR;       //i值不合法
-    if (L->length == MAXSIZE)
+    }
+    if (L->length == MAXSIZE) {
         return ERROR;       //当前储存空间已满
+    }
+
     for (int j = L->length - 1; j >= i - 1; j--) {
         L->elem[j + 1] = L->elem[j];
     }
@@ -99,7 +103,7 @@ void ListInsert(SqList *L, int i, int e) {
 }
 
 //删除第i个位置的元素
-void ListDelete(SqList *L, int i) {
+Status ListDelete(SqList *L, int i) {
     if (i < 1 || i > L->length + 1)
         return ERROR;       //i值不合法
     for (int j = i; j <= L->length; j++) {
@@ -128,7 +132,7 @@ void Flip(SqList L) {
         *begin = *end;
         *end = middle;
         num--;
-        begin = &L.elem[num-1];
-        end = &L.elem[L.length-num];
+        begin = &L.elem[num - 1];
+        end = &L.elem[L.length - num];
     }
 }

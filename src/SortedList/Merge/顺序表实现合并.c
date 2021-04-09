@@ -2,7 +2,7 @@
 // Created by Coco on 2021/4/9.
 //
 
-#include "有序表合并.h"
+#include "MergeSortedList.h"
 
 void MergeList_Sq(SqList LA,SqList LB,SqList &LC){
     LC.length = LA.length+LB.length;

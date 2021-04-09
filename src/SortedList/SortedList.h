@@ -3,8 +3,8 @@
 //
 //顺序表随机存取、随机访问
 
-#ifndef DEMO_顺序表_H
-#define DEMO_顺序表_H
+#ifndef DEMO_SortedList_H
+#define DEMO_SortedList_H
 
 #endif //DEMO_顺序表_H
 
