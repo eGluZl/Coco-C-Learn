@@ -2,12 +2,14 @@
 // Created by Coco on 2021/4/6.
 //
 
+
+
 #ifndef DEMO_POLYNOMIAL_H
 #define DEMO_POLYNOMIAL_H
 
 #endif //DEMO_多项式_H
 
-#typedef MAXSIZE 1000       //多项式可能达到的最大长度
+static int MAXSIZE = 1000;       //多项式可能达到的最大长度
 
 //先把多项式中每一个元素的类型定义好，定义为Polynomial型
 //再用该类型定义数组elem用以储存该数组
@@ -31,4 +33,4 @@ typedef struct PNode {
     float coef;
     int expn;
     struct PNode *next;
-} PNode, *Polynomial;
+} PNode;

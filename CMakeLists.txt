@@ -17,4 +17,5 @@ add_executable(
         src/SortedList/Polynomial/Polynomial.h
         src/SortedList/Merge/MergeSortedList.c
         src/SortedList/Merge/MergeSortedList.h
+        Notebook/mallocArrayMemory.c
 )

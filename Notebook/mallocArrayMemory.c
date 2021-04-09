@@ -2,9 +2,13 @@
 // Created by Coco on 2021/4/6.
 //
 
+//好多错惹
+
+#include "../src/LinkList/LinkList.h"
+static int MAXSIZE = 1000;
 /*数组静态分配*/
 typedef struct {
-    ElemType data[MaxSize];
+    ElemType data[MAXSIZE];
     int length;
 } SqList;    //顺序表类型
 
