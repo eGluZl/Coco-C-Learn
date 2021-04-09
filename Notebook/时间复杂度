@@ -1,0 +1,18 @@
+顺序表：
+1、按序号存取、查找：O(1)
+2、增删：O(n)
+3、实现有序表合并：O(ListLength(LA)+ListLength(LB))
+   实现有序表合并的空间复杂度O(ListLength(LA)+ListLength(LB))
+
+单链表：
+1、查找值为e的元素：O(n)
+2、增删：O(n)
+3、头插法建立链表：O(n)
+4、尾插法建立链表：O(n)
+5、实现有序表合并：O(ListLength(LA)+ListLength(LB))
+   实现有序表合并的空间复杂度O(1)
+
+循环链表：
+1、带尾指针的循环链表合并：O(1)
+2、双向循环链表的增删：O(n)
+
