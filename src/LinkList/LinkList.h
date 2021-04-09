@@ -2,6 +2,8 @@
 // Created by Coco on 2021/4/8.
 //
 
+#include "../common/Constants.h"
+
 #ifndef DEMO_LinkList_H
 #define DEMO_LinkList_H
 
@@ -33,5 +35,5 @@ typedef struct DulNode {
     struct DulNode *prior, *next;
 } DulNode, *DulLinList;
 
-Status GetElem_L(LinkList L, int i, ElemType &e);
-LinkList LinkListInit(LinkList &L);
+Status GetElem_L(LinkList L, int i, ElemType e);
+LinkList LinkListInit(LinkList L);

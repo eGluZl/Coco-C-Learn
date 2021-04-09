@@ -16,3 +16,6 @@ typedef struct DuLNode{
     int data;
     struct DuLNode *prior,*next;
 }DuList,*DuLinkList;
+
+void MergeList_Sq(SqList LA,SqList LB,SqList LC);
+void MergeList_L(DuLinkList La, DuLinkList Lb, DuLinkList Lc);

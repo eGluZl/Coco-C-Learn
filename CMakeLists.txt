@@ -15,5 +15,6 @@ add_executable(
         src/common/Constants.h
         src/SortedList/Polynomial/Polynomial.c
         src/SortedList/Polynomial/Polynomial.h
-
+        src/SortedList/Merge/MergeSortedList.c
+        src/SortedList/Merge/MergeSortedList.h
 )
